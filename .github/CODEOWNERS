@@ -1,0 +1,19 @@
+# Cada integrante es responsable de revisar PRs en su área
+
+# App Móvil
+src/mobile/                 @JuanJesusRodriguezArellano
+
+# Backend .NET
+src/backend/                @OmarDuenasCervantes
+
+# Raspberry Pi y Hardware
+src/raspberry-pi/           @MarcoMartinezMoreno @IsmaelDiazDeLeon
+
+# Infraestructura Azure
+infra/                      @OmarDuenasCervantes
+
+# Documentación y Figma
+docs/                       @LuisFernandoFlores
+
+# CI/CD
+.github/                    @JuanJesusRodriguezArellano

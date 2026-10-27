@@ -1,0 +1,24 @@
+name: CI Raspberry Pi
+
+on:
+  push:
+    paths:
+      - "src/raspberry-pi/**"
+  pull_request:
+    paths:
+      - "src/raspberry-pi/**"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install flake8
+
+      - run: flake8 src/raspberry-pi/ --max-line-length=120 --exclude=__pycache__
